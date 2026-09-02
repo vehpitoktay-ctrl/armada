@@ -329,13 +329,21 @@ h2.title em{font-style:normal;background:linear-gradient(100deg,var(--brand),var
 
 /* ============ CARDS ============ */
 .grid-3{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
-.card{position:relative;padding:32px 30px;border-radius:var(--r-lg);border:1px solid var(--line);
+.card{position:relative;padding:0;border-radius:var(--r-lg);border:1px solid var(--line);
   background:linear-gradient(165deg,rgba(255,255,255,.05),rgba(255,255,255,.014));
   transition:transform .4s var(--ease),border-color .35s,box-shadow .4s;overflow:hidden;text-align:left;width:100%;display:block}
 .card::after{content:"";position:absolute;inset:0;opacity:0;transition:opacity .4s;pointer-events:none;
   background:radial-gradient(340px 180px at 50% 0%,rgba(255,47,61,.16),transparent 72%)}
 .card:hover{transform:translateY(-8px);border-color:rgba(255,47,61,.42);box-shadow:0 30px 60px -30px rgba(255,47,61,.5)}
 .card:hover::after{opacity:1}
+.card-media{display:block;position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--bg-2)}
+.card-media img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.card:hover .card-media img{transform:scale(1.06)}
+/* fade the photo into the card body so the icon and heading stay readable */
+.card-media::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(0deg,#0b0d12 2%,rgba(11,13,18,.55) 42%,rgba(11,13,18,.12))}
+.card-body{display:block;padding:0 30px 32px;position:relative;z-index:1}
+.card .ico{margin-top:-34px}
 .card .ico{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;margin-bottom:24px;
   background:linear-gradient(150deg,rgba(255,47,61,.2),rgba(255,47,61,.05));border:1px solid rgba(255,47,61,.28)}
 .card .ico svg{width:25px;height:25px;color:var(--brand-soft)}
@@ -669,47 +677,65 @@ footer h4{font-family:'Outfit';font-size:11.5px;font-weight:800;letter-spacing:.
     </div>
 
     <div class="grid-3">
-      <button class="card rv" data-modal="m-laptop" data-d="1">
+      <div class="card rv" role="button" tabindex="0" aria-haspopup="dialog" data-modal="m-laptop" data-d="1">
+        <span class="card-media"><img src="hizmet-tamir.jpg" alt="Anakart üzerinde onarım yapan teknisyen" width="800" height="500" loading="lazy" decoding="async"></span>
+        <span class="card-body">
         <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg></span>
         <h3>Laptop &amp; PC Tamiri</h3>
         <p>Anakart ve chipset onarımı, LCD panel değişimi, soğutma bakımı ve donanım yükseltme işlemleri.</p>
         <span class="more">Detayları gör <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </button>
+        </span>
+      </div>
 
-      <button class="card alt rv" data-modal="m-camera" data-d="2">
+      <div class="card alt rv" role="button" tabindex="0" aria-haspopup="dialog" data-modal="m-camera" data-d="2">
+        <span class="card-media"><img src="hizmet-kamera.jpg" alt="Duvara monte edilmiş iki güvenlik kamerası" width="800" height="500" loading="lazy" decoding="async"></span>
+        <span class="card-body">
         <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m23 7-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span>
         <h3>Güvenlik Sistemleri</h3>
         <p>4K IP kamera, gece görüş, yüz tanıma ve mobil uygulamayla uzaktan izleme altyapısı kurulumu.</p>
         <span class="more">Detayları gör <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </button>
+        </span>
+      </div>
 
-      <button class="card rv" data-modal="m-data" data-d="3">
+      <div class="card rv" role="button" tabindex="0" aria-haspopup="dialog" data-modal="m-data" data-d="3">
+        <span class="card-media"><img src="hizmet-veri.jpg" alt="Açılmış hard disk ve okuma kafası" width="800" height="500" loading="lazy" decoding="async"></span>
+        <span class="card-body">
         <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg></span>
         <h3>Veri Kurtarma</h3>
         <p>HDD, SSD, NVMe ve flash bellekten fiziksel veya yazılımsal veri kurtarma; silinen dosyaların geri getirilmesi.</p>
         <span class="more">Detayları gör <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </button>
+        </span>
+      </div>
 
-      <button class="card alt rv" data-modal="m-network" data-d="1">
+      <div class="card alt rv" role="button" tabindex="0" aria-haspopup="dialog" data-modal="m-network" data-d="1">
+        <span class="card-media"><img src="hizmet-ag.jpg" alt="Ağ panelinde düzenlenmiş mavi ethernet kabloları" width="800" height="500" loading="lazy" decoding="async"></span>
+        <span class="card-body">
         <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 18h.01M10 18h.01"/><path d="M12 14V9M7 9h10a2 2 0 0 0 2-2V4"/><path d="M5 9V4"/></svg></span>
         <h3>Ağ &amp; Kurumsal IT</h3>
         <p>Ofis ve işletmeler için kablolama, modem-switch yapılandırması, Wi-Fi kapsama planlaması ve sürekli teknik destek.</p>
         <span class="more">Detayları gör <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </button>
+        </span>
+      </div>
 
-      <button class="card rv" data-modal="m-software" data-d="2">
+      <div class="card rv" role="button" tabindex="0" aria-haspopup="dialog" data-modal="m-software" data-d="2">
+        <span class="card-media"><img src="hizmet-yazilim.jpg" alt="Koyu ekranda yazılım kurulum çıktısı" width="800" height="500" loading="lazy" decoding="async"></span>
+        <span class="card-body">
         <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-3 3 3 3M16 9l3 3-3 3"/><path d="M13.5 6.5 10.5 17.5"/><rect x="2" y="3" width="20" height="18" rx="2"/></svg></span>
         <h3>Yazılım &amp; Format</h3>
         <p>İşletim sistemi kurulumu, sürücü ve lisans yönetimi, virüs temizliği, performans optimizasyonu ve yedekleme kurulumu.</p>
         <span class="more">Detayları gör <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </button>
+        </span>
+      </div>
 
-      <button class="card alt rv" data-modal="m-upgrade" data-d="3">
+      <div class="card alt rv" role="button" tabindex="0" aria-haspopup="dialog" data-modal="m-upgrade" data-d="3">
+        <span class="card-media"><img src="hizmet-donanim.jpg" alt="RAM bellek modülü yakın çekim" width="800" height="500" loading="lazy" decoding="async"></span>
+        <span class="card-body">
         <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></span>
         <h3>Donanım &amp; Yükseltme</h3>
         <p>İhtiyaca göre parça temini, SSD/RAM yükseltme, toplama bilgisayar kurulumu ve performans danışmanlığı.</p>
         <span class="more">Detayları gör <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </button>
+        </span>
+      </div>
     </div>
   </div>
 </section>
@@ -1108,6 +1134,11 @@ footer h4{font-family:'Outfit';font-size:11.5px;font-weight:800;letter-spacing:.
     if (e.target.classList.contains('modal')) closeModal(e.target);
   });
   document.addEventListener('keydown', function(e){
+    if ((e.key === 'Enter' || e.key === ' ') && e.target.hasAttribute && e.target.hasAttribute('data-modal')){
+      e.preventDefault();
+      openModal(e.target.getAttribute('data-modal'));
+      return;
+    }
     if (e.key === 'Escape' || e.key === 'Esc'){
       closeAll();
       if (drawer.classList.contains('open')) setDrawer(false);
