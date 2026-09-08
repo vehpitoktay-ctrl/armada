@@ -1,0 +1,119 @@
+/* Armada — hizmet alt sayfalari. Ana sayfanin tasarim dilini paylasir. */
+:root{
+  --bg:#06070a; --bg-2:#0a0c11;
+  --panel:rgba(255,255,255,.035);
+  --line:rgba(255,255,255,.09); --line-soft:rgba(255,255,255,.055);
+  --text:#eef1f7; --muted:#b3bac8; --muted-2:#949cac;
+  --brand:#ff2f3d; --brand-soft:#ff6b57; --brand-deep:#c00f1c;
+  --accent:#38bdf8; --wa:#25d366;
+  --r-sm:10px; --r:16px; --r-lg:22px;
+  --max:900px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+body{
+  font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  background:var(--bg); color:var(--text);
+  line-height:1.68; font-size:16.5px; overflow-x:hidden;
+}
+.kap{max-width:var(--max);margin:0 auto;padding:0 20px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+.ust{border-bottom:1px solid var(--line-soft);background:var(--bg-2);position:sticky;top:0;z-index:20}
+.ust .kap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.ust img{height:34px;width:auto;display:block}
+.ust .tel{
+  font-family:'Outfit',sans-serif;font-weight:700;font-size:15px;
+  color:#fff;background:var(--brand);padding:9px 16px;border-radius:999px;
+  white-space:nowrap;transition:background .2s var(--ease);
+}
+.ust .tel:hover{background:var(--brand-deep);text-decoration:none}
+
+.kirinti{font-size:13.5px;color:var(--muted-2);padding:18px 0 0}
+.kirinti a{color:var(--muted)}
+
+h1{
+  font-family:'Outfit',sans-serif;font-weight:800;
+  font-size:clamp(28px,5.2vw,42px);line-height:1.14;letter-spacing:-.02em;
+  margin:14px 0 0;
+}
+.ozet{color:var(--muted);font-size:18px;margin-top:14px;max-width:62ch}
+
+.kahraman-gorsel{
+  margin:26px 0 0;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);
+}
+.kahraman-gorsel img{width:100%;height:auto;display:block}
+
+section{padding:34px 0}
+h2{
+  font-family:'Outfit',sans-serif;font-weight:700;
+  font-size:clamp(21px,3.2vw,27px);letter-spacing:-.015em;margin-bottom:14px;
+}
+h3{font-family:'Outfit',sans-serif;font-weight:600;font-size:18px;margin-bottom:5px}
+p{color:var(--muted);max-width:66ch}
+p + p{margin-top:13px}
+
+.liste{display:grid;gap:12px;margin-top:6px}
+.oge{
+  padding:18px 20px;background:var(--panel);
+  border:1px solid var(--line-soft);border-radius:var(--r);
+}
+.oge p{margin:0;font-size:15.5px}
+
+details{
+  border:1px solid var(--line-soft);border-radius:var(--r);
+  background:var(--panel);margin-bottom:10px;
+}
+summary{
+  cursor:pointer;padding:15px 18px;font-weight:600;
+  font-family:'Outfit',sans-serif;list-style:none;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';float:right;color:var(--brand-soft);font-size:20px;line-height:1}
+details[open] summary::after{content:'\2212'}
+details .cevap{padding:0 18px 16px;color:var(--muted);font-size:15.5px}
+
+.cta{
+  margin-top:10px;padding:26px 24px;border-radius:var(--r-lg);
+  background:linear-gradient(140deg,rgba(255,47,61,.14),rgba(255,107,87,.05));
+  border:1px solid rgba(255,47,61,.28);
+}
+.cta h2{margin-bottom:8px}
+.cta p{margin-bottom:18px}
+.dugmeler{display:flex;flex-wrap:wrap;gap:10px}
+.dugme{
+  font-family:'Outfit',sans-serif;font-weight:700;font-size:15.5px;
+  padding:12px 22px;border-radius:999px;color:#fff;
+  transition:transform .2s var(--ease),background .2s var(--ease);
+}
+.dugme:hover{text-decoration:none;transform:translateY(-2px)}
+.dugme.ara{background:var(--brand)}
+.dugme.ara:hover{background:var(--brand-deep)}
+.dugme.wa{background:var(--wa);color:#04220f}
+
+.diger{border-top:1px solid var(--line-soft);padding-top:26px}
+.diger ul{list-style:none;display:flex;flex-wrap:wrap;gap:9px}
+.diger a{
+  display:inline-block;padding:8px 15px;border:1px solid var(--line);
+  border-radius:999px;color:var(--muted);font-size:14.5px;
+}
+.diger a:hover{color:var(--text);border-color:var(--brand);text-decoration:none}
+
+footer{
+  border-top:1px solid var(--line-soft);margin-top:34px;padding:26px 0 40px;
+  color:var(--muted-2);font-size:14px;
+}
+footer .kap{display:flex;flex-wrap:wrap;gap:8px 22px;justify-content:space-between}
+footer a{color:var(--muted-2)}
+
+@media (max-width:620px){
+  body{font-size:16px}
+  .ozet{font-size:17px}
+  section{padding:28px 0}
+  .cta{padding:22px 18px}
+}
