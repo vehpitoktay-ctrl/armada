@@ -1,0 +1,51 @@
+# Armada Teknoloji Merkezi
+
+> Birecik (Şanlıurfa) merkezli bilgisayar teknik servisi ve güvenlik sistemleri
+> kurulumu. Bilgisayar tamiri, veri kurtarma, güvenlik kamerası, alarm sistemi,
+> ağ kurulumu, yazıcı servisi ve donanım satışı.
+
+İşletme: Armada Teknoloji Merkezi
+Adres: Meydan Mah. Mimar Sinan Cad. No: 3/B, Birecik / Şanlıurfa
+Telefon: 0532 113 59 84
+Hizmet bölgesi: Birecik, Nizip, Halfeti, Karkamış; kurumsal talepler için
+Şanlıurfa ve Gaziantep.
+
+Çalışma biçimi: Cihaz servise geldiğinde önce test edilir, arıza tespit edilir,
+yapılacak işlem ve ücreti müşteriye iletilir; onay gelmeden işleme başlanmaz.
+Kamera ve ağ kurulumu gibi işlerde önce alan keşfi yapılır.
+
+## Hizmetler
+
+- [Bilgisayar tamiri ve teknik servis](https://armadateknoloji.com.tr/bilgisayar-tamiri/): Anakart ve chipset onarımı, LCD panel değişimi, soğutma bakımı, donanım yükseltme.
+- [Format ve virüs temizleme](https://armadateknoloji.com.tr/format-yazilim/): İşletim sistemi kurulumu, sürücü ve lisans yönetimi, zararlı yazılım temizliği.
+- [SSD ve RAM yükseltme](https://armadateknoloji.com.tr/donanim-yukseltme/): Disk klonlama ile SSD geçişi, bellek yükseltme, parça temini.
+- [Oyuncu bilgisayarı ve toplama sistem](https://armadateknoloji.com.tr/oyuncu-bilgisayari/): Bütçeye göre parça dengesi, soğutma, kurulum ve test.
+- [Güvenlik kamerası kurulumu](https://armadateknoloji.com.tr/guvenlik-kamera/): Alan keşfi, IP ve analog kamera, kayıt cihazı, uzaktan izleme.
+- [Alarm sistemleri](https://armadateknoloji.com.tr/alarm-sistemleri/): Hırsız ve yangın alarmı, kablolu ve kablosuz kurulum.
+- [Kamera ve ekipman satışı](https://armadateknoloji.com.tr/kamera-satis/): IP ve analog kamera, DVR/NVR kayıt cihazı, disk, kablo.
+- [Veri kurtarma](https://armadateknoloji.com.tr/veri-kurtarma/): HDD, SSD, NVMe ve flash bellekten veri kurtarma; fiziksel arızalar laboratuvar ortamında.
+- [Ağ kurulumu ve kurumsal IT](https://armadateknoloji.com.tr/ag-kurumsal-it/): Kablolama, modem-switch yapılandırması, Wi-Fi kapsama planlaması.
+- [Bilgisayar ve laptop satışı](https://armadateknoloji.com.tr/bilgisayar-satis/): Kurulumu yapılmış, test edilmiş cihazlar; toplama sistem.
+- [Yazıcı satışı](https://armadateknoloji.com.tr/yazici-satis/): Lazer, mürekkepli ve çok fonksiyonlu yazıcılar.
+- [Yazıcı tamiri ve servisi](https://armadateknoloji.com.tr/yazici-tamiri/): Kâğıt sıkışması, baskı kalitesi, kartuş tanımama, ağ bağlantısı.
+- [Toner ve kartuş satışı](https://armadateknoloji.com.tr/toner-kartus/): Orijinal ve muadil toner, kartuş, sarf malzeme.
+- [Hizmet bölgeleri](https://armadateknoloji.com.tr/hizmet-bolgeleri/): Hangi işin serviste, hangisinin yerinde yapıldığı.
+
+## Sorun giderme rehberleri
+
+- [Bilgisayar açılmıyor](https://armadateknoloji.com.tr/rehber/bilgisayar-acilmiyor/): Güç, bellek, ekran ve anakart kaynaklı sebeplerin ayrıştırılması.
+- [Laptop şarj almıyor](https://armadateknoloji.com.tr/rehber/laptop-sarj-almiyor/): Adaptör, şarj soketi, batarya ve şarj devresi ayrımı.
+- [Bilgisayar ısınıyor ve kapanıyor](https://armadateknoloji.com.tr/rehber/bilgisayar-isiniyor/): Toz, kuruyan termal macun, fan arızası.
+- [Bilgisayar yavaşladı](https://armadateknoloji.com.tr/rehber/bilgisayar-yavasladi/): Sabit disk, dolu depolama, başlangıç programları, bellek.
+- [Mavi ekran hatası](https://armadateknoloji.com.tr/rehber/mavi-ekran-hatasi/): Sürücü, bellek, disk ve ısınma kaynaklı sebepler.
+- [Silinen dosyaları geri getirme](https://armadateknoloji.com.tr/rehber/silinen-dosya-kurtarma/): Üzerine yazılmayı önleme ve kurtarma ihtimalini düşüren hatalar.
+- [Disk görünmüyor](https://armadateknoloji.com.tr/rehber/disk-gorunmuyor/): Kablo, bölüm tablosu, dosya sistemi ve fiziksel arıza ayrımı.
+- [Wi-Fi bağlanmıyor, internet kopuyor](https://armadateknoloji.com.tr/rehber/wifi-baglanmiyor/): Kapsama, kanal karışması, sürücü ve modem sorunları.
+- [Yazıcı kâğıt sıkıştırıyor](https://armadateknoloji.com.tr/rehber/yazici-kagit-sikistiriyor/): Merdane aşınması, kâğıt tozu, nem ve yanlış yerleştirme.
+
+## Notlar
+
+- Rehber sayfaları uzaktan tanı koymaz; belirtiye göre olası sebepleri ve
+  kullanıcının kendi kontrol edebileceklerini anlatır.
+- Fiyat ve süre bilgisi cihaz görülmeden verilmez.
+- Site haritası: https://armadateknoloji.com.tr/sitemap.xml
